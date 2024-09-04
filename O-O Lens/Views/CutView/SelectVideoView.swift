@@ -3,7 +3,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct SelectVideoView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading) {
@@ -26,7 +26,7 @@ struct ContentView: View {
                         .aspectRatio(170/266, contentMode: .fit)
                 }.padding(.top)
             }.padding(10)
-        }
+        }.background(Color.black)
     }
 }
 

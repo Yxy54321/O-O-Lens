@@ -3,6 +3,8 @@ import SwiftUI
 
 class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
 
+    var decorationView: UIImageView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,7 +45,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
             selectedImage: UIImage(named: "film_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
         
-        let cutView = UIHostingController(rootView: ContentView())
+        let cutView = UIHostingController(rootView: SelectVideoView())
         cutView.tabBarItem = UITabBarItem(
             title: "Cut",
             image: UIImage(named: "cut_icon_unselected")?.withRenderingMode(.alwaysOriginal),
@@ -65,7 +67,38 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         // 设置 TabBar 的高度和位置
         var tabFrame = tabBar.frame
         tabFrame.size.height = 100  // 增加 TabBar 高度
-        tabFrame.origin.y = view.frame.size.height - 100  // 保持在屏幕底部
+        tabFrame.origin.y = view.frame.size.height - 98  // 保持在屏幕底部
         tabBar.frame = tabFrame
+        
+        updateDecorationView()
+    }
+    
+    func updateDecorationView() {
+        // 移除之前的装饰图形
+        decorationView?.removeFromSuperview()
+        // 获取当前选中的 UITabBarItem 的位置
+        guard let selectedIndex = tabBar.items?.firstIndex(of: tabBar.selectedItem!) else { return }
+
+        let itemWidth = tabBar.frame.width / CGFloat(tabBar.items!.count)
+        let xOffset = itemWidth * CGFloat(selectedIndex)
+        
+        // 创建装饰图形
+        let decorationImage = UIImage(named: "decoration_icon.png")
+        decorationView = UIImageView(image: decorationImage)
+        decorationView?.frame = CGRect(
+            x: xOffset + (itemWidth - decorationImage!.size.width) / 2,
+            y: tabBar.frame.origin.y, // 在这里调整距离
+            width: decorationImage!.size.width,
+            height: decorationImage!.size.height
+        )
+        decorationView?.contentMode = .scaleAspectFit
+        
+        // 添加装饰图形到视图中
+        view.addSubview(decorationView!)
+    }
+
+    // 当选中的 UITabBarItem 发生改变时，更新装饰图形的位置
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        updateDecorationView()
     }
 }

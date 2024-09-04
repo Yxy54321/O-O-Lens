@@ -10,7 +10,7 @@
 		2AA325732C8309C000B6CDBC /* MediaCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA325722C8309C000B6CDBC /* MediaCaptureSession.swift */; };
 		2ACD139E2C84B886003B38CD /* customToolBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD139D2C84B886003B38CD /* customToolBarController.swift */; };
 		2ACD13A02C84B9EA003B38CD /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */; };
-		2ADCD9642C59F73F0036443E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9632C59F73F0036443E /* ContentView.swift */; };
+		2ADCD9642C59F73F0036443E /* SelectVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9632C59F73F0036443E /* SelectVideoView.swift */; };
 		2ADCD9662C59F74C0036443E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9652C59F74C0036443E /* Card.swift */; };
 		2ADCD9692C59F75B0036443E /* cardsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9682C59F75B0036443E /* cardsData.swift */; };
 		2AE1FE542C4A398B00F7748F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1FE532C4A398B00F7748F /* AppDelegate.swift */; };
@@ -22,7 +22,6 @@
 		2AE1FE752C4A398E00F7748F /* O-O LensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1FE742C4A398E00F7748F /* O-O LensUITests.swift */; };
 		2AE1FE772C4A398E00F7748F /* O-O LensUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1FE762C4A398E00F7748F /* O-O LensUITestsLaunchTests.swift */; };
 		2AEB4AF02C52A13C001A44D7 /* motionEvaluator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEB4AEF2C52A13C001A44D7 /* motionEvaluator.swift */; };
-		2AECFD9D2C4AAD4200B62E36 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2AECFD9C2C4AAD4200B62E36 /* YOLOv3Tiny.mlmodel */; };
 		2AECFD9F2C4AB51100B62E36 /* ObjectDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */; };
 		2AECFDA12C4BAC4600B62E36 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */; };
 		2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE37AD2C54DA0100451627 /* SpeechManager.swift */; };
@@ -49,7 +48,7 @@
 		2AA325722C8309C000B6CDBC /* MediaCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCaptureSession.swift; sourceTree = "<group>"; };
 		2ACD139D2C84B886003B38CD /* customToolBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customToolBarController.swift; sourceTree = "<group>"; };
 		2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
-		2ADCD9632C59F73F0036443E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2ADCD9632C59F73F0036443E /* SelectVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVideoView.swift; sourceTree = "<group>"; };
 		2ADCD9652C59F74C0036443E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2ADCD9682C59F75B0036443E /* cardsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardsData.swift; sourceTree = "<group>"; };
 		2AE1FE502C4A398B00F7748F /* O-O Lens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O-O Lens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,7 +64,6 @@
 		2AE1FE742C4A398E00F7748F /* O-O LensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "O-O LensUITests.swift"; sourceTree = "<group>"; };
 		2AE1FE762C4A398E00F7748F /* O-O LensUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "O-O LensUITestsLaunchTests.swift"; sourceTree = "<group>"; };
 		2AEB4AEF2C52A13C001A44D7 /* motionEvaluator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motionEvaluator.swift; sourceTree = "<group>"; };
-		2AECFD9C2C4AAD4200B62E36 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
 		2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionController.swift; sourceTree = "<group>"; };
 		2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
 		2AEE37AD2C54DA0100451627 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
@@ -131,16 +129,14 @@
 		2AE1FE522C4A398B00F7748F /* O-O Lens */ = {
 			isa = PBXGroup;
 			children = (
+				4573FE2E2C888836002F4DF9 /* Views */,
 				2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */,
 				2ACD139D2C84B886003B38CD /* customToolBarController.swift */,
 				2AE1FE532C4A398B00F7748F /* AppDelegate.swift */,
 				2AE1FE552C4A398B00F7748F /* SceneDelegate.swift */,
 				2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */,
-				2ADCD9652C59F74C0036443E /* Card.swift */,
 				2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */,
-				2AECFD9C2C4AAD4200B62E36 /* YOLOv3Tiny.mlmodel */,
 				2AE1FE592C4A398B00F7748F /* Main.storyboard */,
-				2ADCD9632C59F73F0036443E /* ContentView.swift */,
 				2AE1FE5C2C4A398E00F7748F /* Assets.xcassets */,
 				2AE1FE5E2C4A398E00F7748F /* LaunchScreen.storyboard */,
 				2AE1FE612C4A398E00F7748F /* Info.plist */,
@@ -163,6 +159,23 @@
 				2AE1FE762C4A398E00F7748F /* O-O LensUITestsLaunchTests.swift */,
 			);
 			path = "O-O LensUITests";
+			sourceTree = "<group>";
+		};
+		4573FE2E2C888836002F4DF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4573FE2F2C8888CA002F4DF9 /* CutView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4573FE2F2C8888CA002F4DF9 /* CutView */ = {
+			isa = PBXGroup;
+			children = (
+				2ADCD9652C59F74C0036443E /* Card.swift */,
+				2ADCD9632C59F73F0036443E /* SelectVideoView.swift */,
+			);
+			path = CutView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,11 +316,10 @@
 				2AA325732C8309C000B6CDBC /* MediaCaptureSession.swift in Sources */,
 				2AECFD9F2C4AB51100B62E36 /* ObjectDetectionController.swift in Sources */,
 				2ADCD9692C59F75B0036443E /* cardsData.swift in Sources */,
-				2ADCD9642C59F73F0036443E /* ContentView.swift in Sources */,
+				2ADCD9642C59F73F0036443E /* SelectVideoView.swift in Sources */,
 				2ACD13A02C84B9EA003B38CD /* PracticeViewController.swift in Sources */,
 				2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */,
 				2ADCD9662C59F74C0036443E /* Card.swift in Sources */,
-				2AECFD9D2C4AAD4200B62E36 /* YOLOv3Tiny.mlmodel in Sources */,
 				2AE1FE562C4A398B00F7748F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
