@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import usingsb
+//@testable import usingsb
 
 final class usingsbTests: XCTestCase {
 

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Card: View {
-    var item: Item
+    @Binding var item: Item // 绑定到外部的 Item，这样可以进行修改
     
     var body: some View {
         VStack{
@@ -21,6 +21,9 @@ struct Card: View {
             }
             .font(.caption)
             .foregroundColor(.white)
+        }
+        .onTapGesture {
+            item.isSelected.toggle() // 切换选中状态
         }
         .accessibilityElement(children: .combine)
         .accessibilityLabel("\(item.keySentence) \(item.hasSpeaker ? "，有口播" : "")")
@@ -73,12 +76,4 @@ struct TextOverlay: View {
     }
 }
 
-//#Preview {
-//    
-//    HStack(spacing: 10.0){
-//        Card(item: cardItems[0])
-//            .aspectRatio(170/266, contentMode: .fit)
-//        Card(item: cardItems[1])
-//            .aspectRatio(170/266, contentMode: .fit)
-//    }.padding(10)
-//}
+
