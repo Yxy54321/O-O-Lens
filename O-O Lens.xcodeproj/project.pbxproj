@@ -25,6 +25,8 @@
 		2AECFD9F2C4AB51100B62E36 /* ObjectDetectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */; };
 		2AECFDA12C4BAC4600B62E36 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */; };
 		2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE37AD2C54DA0100451627 /* SpeechManager.swift */; };
+		459C19132C8E022D00BF68C2 /* CutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19122C8E022D00BF68C2 /* CutView.swift */; };
+		459C19152C8E026F00BF68C2 /* CutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19142C8E026F00BF68C2 /* CutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetectionController.swift; sourceTree = "<group>"; };
 		2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
 		2AEE37AD2C54DA0100451627 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		459C19122C8E022D00BF68C2 /* CutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutView.swift; sourceTree = "<group>"; };
+		459C19142C8E026F00BF68C2 /* CutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */,
 				2ACD139D2C84B886003B38CD /* customToolBarController.swift */,
 				2AE1FE532C4A398B00F7748F /* AppDelegate.swift */,
+				459C19142C8E026F00BF68C2 /* CutViewController.swift */,
 				2AE1FE552C4A398B00F7748F /* SceneDelegate.swift */,
 				2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */,
 				2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */,
@@ -174,6 +179,7 @@
 			children = (
 				2ADCD9652C59F74C0036443E /* Card.swift */,
 				2ADCD9632C59F73F0036443E /* SelectVideoView.swift */,
+				459C19122C8E022D00BF68C2 /* CutView.swift */,
 			);
 			path = CutView;
 			sourceTree = "<group>";
@@ -316,11 +322,13 @@
 				2AA325732C8309C000B6CDBC /* MediaCaptureSession.swift in Sources */,
 				2AECFD9F2C4AB51100B62E36 /* ObjectDetectionController.swift in Sources */,
 				2ADCD9692C59F75B0036443E /* cardsData.swift in Sources */,
+				459C19132C8E022D00BF68C2 /* CutView.swift in Sources */,
 				2ADCD9642C59F73F0036443E /* SelectVideoView.swift in Sources */,
 				2ACD13A02C84B9EA003B38CD /* PracticeViewController.swift in Sources */,
 				2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */,
 				2ADCD9662C59F74C0036443E /* Card.swift in Sources */,
 				2AE1FE562C4A398B00F7748F /* SceneDelegate.swift in Sources */,
+				459C19152C8E026F00BF68C2 /* CutViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

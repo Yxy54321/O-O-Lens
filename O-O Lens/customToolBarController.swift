@@ -45,7 +45,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
             selectedImage: UIImage(named: "film_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
         
-        let cutView = UIHostingController(rootView: SelectVideoView())
+        let cutView = CutViewController()
         cutView.tabBarItem = UITabBarItem(
             title: "Cut",
             image: UIImage(named: "cut_icon_unselected")?.withRenderingMode(.alwaysOriginal),
