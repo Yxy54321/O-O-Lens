@@ -16,11 +16,12 @@ class CutViewController: UIViewController {
         hostingController.view.frame = view.bounds
         hostingController.didMove(toParent: self)
         
-        // 监听跳转到页面 C 的通知
-//        NotificationCenter.default.addObserver(self, selector: #selector(openPageC), name: .openPageC, object: nil)
-         // 跳转到横版剪辑页
-    }
 
+        // 监听跳转到页面 C 的通知
+        // NotificationCenter.default.addObserver(self, selector: #selector(openPageC), name: .openPageC, object: nil)
+        // 跳转到横版剪辑页
+    }
+    
     // 跳转到 UIKit 的页面 C
 //    @objc func openPageC() {
 //        let pageCViewController = PageCViewController()
@@ -31,5 +32,6 @@ class CutViewController: UIViewController {
 
 // 定义通知名称
 extension Notification.Name {
-    static let openPageC = Notification.Name("openPageC")
+    static let openPageC = Notification.Name("openPageC") // 改成跳转到横版剪辑页的名称
 }
+

@@ -60,6 +60,10 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         )
         
         viewControllers = [filmView, cutView, practiseView]
+        
+        // 监听隐藏和显示 tabBar 的通知
+        NotificationCenter.default.addObserver(self, selector: #selector(hideTabBar), name: .hideTabBarNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(showTabBar), name: .showTabBarNotification, object: nil)
     }
 
     override func viewDidLayoutSubviews() {
@@ -101,4 +105,27 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         updateDecorationView()
     }
+    
+    // @objc 方法用于隐藏 tabBar 和装饰元素
+    @objc func hideTabBar() {
+        self.tabBar.isHidden = true
+        decorationView?.isHidden = true 
+    }
+
+    // @objc 方法用于显示 tabBar 和装饰元素
+    @objc func showTabBar() {
+        self.tabBar.isHidden = false
+        decorationView?.isHidden = false
+    }
 }
+
+extension Notification.Name {
+    static let hideTabBarNotification = Notification.Name("hideTabBarNotification")
+    static let showTabBarNotification = Notification.Name("showTabBarNotification")
+}
+
+// ---- 显示/隐藏 Tabbar 方式 ----
+// 隐藏 TabBar
+// NotificationCenter.default.post(name: .hideTabBarNotification, object: nil)
+// 显示 TabBar
+// NotificationCenter.default.post(name: .showTabBarNotification, object: nil)

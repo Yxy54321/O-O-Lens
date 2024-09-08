@@ -6,14 +6,15 @@ struct SelectVideoView: View {
     var body: some View {
         VStack(spacing: 20.0){
             HStack(alignment: .bottom){
-               // 自定义返回按钮，通过 presentationMode 返回页面 A
-               Button(action: {
-                   self.presentationMode.wrappedValue.dismiss() // 返回页面 A
-               }) {
-                   Image("back") // 返回按钮图标
-                       .resizable()
-                       .frame(width: 40, height: 40)
-               }
+                // 自定义返回按钮，通过 presentationMode 返回页面 A
+                Button(action: {
+                    self.presentationMode.wrappedValue.dismiss() // 返回页面 A
+                    NotificationCenter.default.post(name: .showTabBarNotification, object: nil)
+                }) {
+                    Image("back") // 返回按钮图标
+                        .resizable()
+                        .frame(width: 40, height: 40)
+                }
                 
                 Spacer()
                 
@@ -26,14 +27,14 @@ struct SelectVideoView: View {
                         .padding(.vertical, 10)
                         .padding(.horizontal, 15)
                         .background(
-                         LinearGradient(
-                             gradient: Gradient(colors: [
-                                 Color(red: 152/255, green: 133/255, blue: 247/255),  // #9885F7
-                                 Color(red: 116/255, green: 47/255, blue: 229/255)    // #742FE5
-                             ]),
-                             startPoint: .leading,
-                             endPoint: .trailing
-                         )
+                            LinearGradient(
+                                gradient: Gradient(colors: [
+                                    Color(red: 152/255, green: 133/255, blue: 247/255),  // #9885F7
+                                    Color(red: 116/255, green: 47/255, blue: 229/255)    // #742FE5
+                                ]),
+                                startPoint: .leading,
+                                endPoint: .trailing
+                            )
                         )
                         .foregroundColor(.white)
                         .cornerRadius(12)
@@ -64,8 +65,12 @@ struct SelectVideoView: View {
                 }.padding(.horizontal, 10)
             }
         }.background(Color.black)
-        .foregroundColor(Color.white)
-        .navigationBarHidden(true) // 隐藏默认导航栏
+            .foregroundColor(Color.white)
+            .navigationBarHidden(true) // 隐藏默认导航栏
+            .onAppear {
+                // 页面 B 出现时，隐藏 TabBar
+                NotificationCenter.default.post(name: .hideTabBarNotification, object: nil)
+            }
     }
     
 }
