@@ -10,6 +10,9 @@ struct SelectVideoView: View {
                 Button(action: {
                     self.presentationMode.wrappedValue.dismiss() // 返回页面 A
                     NotificationCenter.default.post(name: .showTabBarNotification, object: nil)
+                    for index in cardsData.cardItems.indices {
+                        cardsData.cardItems[index].isSelected = false
+                    }
                 }) {
                     Image("back") // 返回按钮图标
                         .resizable()
@@ -20,8 +23,12 @@ struct SelectVideoView: View {
                 
                 // 跳转到 UIKit 页面 C
                 Button(action: {
-                    //  NotificationCenter.default.post(name: .openPageC, object: nil)
                     // 跳转到剪辑页
+                    //  NotificationCenter.default.post(name: .openPageC, object: nil)
+                    //   
+                    for index in cardsData.cardItems.indices {
+                        cardsData.cardItems[index].isSelected = false
+                    }
                 }) {
                     Text("确认")
                         .padding(.vertical, 10)

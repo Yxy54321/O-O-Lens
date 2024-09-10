@@ -23,7 +23,7 @@ class CardsData: ObservableObject {
              durationVoice: "34秒",
              imageName:"people-1",
              keySentence: "两个人走在路上", hasSpeaker: true,
-             isSelected: true),
+             isSelected: false),
         Item(date: "2024.6.24",
              dateVoice: "2024年6月24日",
              address: "上海市黄浦区福佑路300号",
