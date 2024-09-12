@@ -10,8 +10,17 @@
 		2AA325732C8309C000B6CDBC /* MediaCaptureSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA325722C8309C000B6CDBC /* MediaCaptureSession.swift */; };
 		2ACD139E2C84B886003B38CD /* customToolBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD139D2C84B886003B38CD /* customToolBarController.swift */; };
 		2ACD13A02C84B9EA003B38CD /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */; };
-		2ADCD9642C59F73F0036443E /* SelectVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9632C59F73F0036443E /* SelectVideoView.swift */; };
-		2ADCD9662C59F74C0036443E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9652C59F74C0036443E /* Card.swift */; };
+		2ACD13A92C87FC5A003B38CD /* TrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A22C87FC5A003B38CD /* TrimView.swift */; };
+		2ACD13AA2C87FC5A003B38CD /* FrameImagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A32C87FC5A003B38CD /* FrameImagesView.swift */; };
+		2ACD13AB2C87FC5A003B38CD /* TimelineMeasure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A42C87FC5A003B38CD /* TimelineMeasure.swift */; };
+		2ACD13AC2C87FC5A003B38CD /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A52C87FC5A003B38CD /* TimelineView.swift */; };
+		2ACD13AD2C87FC5A003B38CD /* CenterLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A62C87FC5A003B38CD /* CenterLine.swift */; };
+		2ACD13AE2C87FC5A003B38CD /* TimelineScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A72C87FC5A003B38CD /* TimelineScroller.swift */; };
+		2ACD13AF2C87FC5A003B38CD /* VideoTimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13A82C87FC5A003B38CD /* VideoTimelineView.swift */; };
+		2ACD13B12C8878B6003B38CD /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13B02C8878B6003B38CD /* EditViewController.swift */; };
+		2ACD13B72C9186BC003B38CD /* movie1.mov in Resources */ = {isa = PBXBuildFile; fileRef = 2ACD13B22C887FF9003B38CD /* movie1.mov */; };
+		2ACD13BF2C91EDE7003B38CD /* SelectVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13BD2C91EDE7003B38CD /* SelectVideoView.swift */; };
+		2ACD13C02C91EDE7003B38CD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD13BE2C91EDE7003B38CD /* Card.swift */; };
 		2ADCD9692C59F75B0036443E /* cardsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADCD9682C59F75B0036443E /* cardsData.swift */; };
 		2AE1FE542C4A398B00F7748F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1FE532C4A398B00F7748F /* AppDelegate.swift */; };
 		2AE1FE562C4A398B00F7748F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE1FE552C4A398B00F7748F /* SceneDelegate.swift */; };
@@ -27,6 +36,7 @@
 		2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE37AD2C54DA0100451627 /* SpeechManager.swift */; };
 		459C19132C8E022D00BF68C2 /* CutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19122C8E022D00BF68C2 /* CutView.swift */; };
 		459C19152C8E026F00BF68C2 /* CutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19142C8E026F00BF68C2 /* CutViewController.swift */; };
+		45F8927C2C92837A00395A0C /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8927B2C92837A00395A0C /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +60,17 @@
 		2AA325722C8309C000B6CDBC /* MediaCaptureSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaCaptureSession.swift; sourceTree = "<group>"; };
 		2ACD139D2C84B886003B38CD /* customToolBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customToolBarController.swift; sourceTree = "<group>"; };
 		2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
-		2ADCD9632C59F73F0036443E /* SelectVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVideoView.swift; sourceTree = "<group>"; };
-		2ADCD9652C59F74C0036443E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		2ACD13A22C87FC5A003B38CD /* TrimView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrimView.swift; sourceTree = "<group>"; };
+		2ACD13A32C87FC5A003B38CD /* FrameImagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FrameImagesView.swift; sourceTree = "<group>"; };
+		2ACD13A42C87FC5A003B38CD /* TimelineMeasure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineMeasure.swift; sourceTree = "<group>"; };
+		2ACD13A52C87FC5A003B38CD /* TimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		2ACD13A62C87FC5A003B38CD /* CenterLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterLine.swift; sourceTree = "<group>"; };
+		2ACD13A72C87FC5A003B38CD /* TimelineScroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineScroller.swift; sourceTree = "<group>"; };
+		2ACD13A82C87FC5A003B38CD /* VideoTimelineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoTimelineView.swift; sourceTree = "<group>"; };
+		2ACD13B02C8878B6003B38CD /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		2ACD13B22C887FF9003B38CD /* movie1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = movie1.mov; sourceTree = "<group>"; };
+		2ACD13BD2C91EDE7003B38CD /* SelectVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVideoView.swift; sourceTree = "<group>"; };
+		2ACD13BE2C91EDE7003B38CD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		2ADCD9682C59F75B0036443E /* cardsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardsData.swift; sourceTree = "<group>"; };
 		2AE1FE502C4A398B00F7748F /* O-O Lens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "O-O Lens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE1FE532C4A398B00F7748F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +90,7 @@
 		2AEE37AD2C54DA0100451627 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		459C19122C8E022D00BF68C2 /* CutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutView.swift; sourceTree = "<group>"; };
 		459C19142C8E026F00BF68C2 /* CutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutViewController.swift; sourceTree = "<group>"; };
+		45F8927B2C92837A00395A0C /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ACD13A12C87FC5A003B38CD /* VideoTimelineView */ = {
+			isa = PBXGroup;
+			children = (
+				2ACD13B22C887FF9003B38CD /* movie1.mov */,
+				2ACD13A22C87FC5A003B38CD /* TrimView.swift */,
+				2ACD13A32C87FC5A003B38CD /* FrameImagesView.swift */,
+				2ACD13A42C87FC5A003B38CD /* TimelineMeasure.swift */,
+				2ACD13A52C87FC5A003B38CD /* TimelineView.swift */,
+				2ACD13A62C87FC5A003B38CD /* CenterLine.swift */,
+				2ACD13A72C87FC5A003B38CD /* TimelineScroller.swift */,
+				2ACD13A82C87FC5A003B38CD /* VideoTimelineView.swift */,
+			);
+			path = VideoTimelineView;
+			sourceTree = "<group>";
+		};
 		2ADCD9672C59F75B0036443E /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,10 +169,11 @@
 			isa = PBXGroup;
 			children = (
 				4573FE2E2C888836002F4DF9 /* Views */,
+				459C19142C8E026F00BF68C2 /* CutViewController.swift */,
+				2ACD13A12C87FC5A003B38CD /* VideoTimelineView */,
 				2ACD139F2C84B9EA003B38CD /* PracticeViewController.swift */,
 				2ACD139D2C84B886003B38CD /* customToolBarController.swift */,
 				2AE1FE532C4A398B00F7748F /* AppDelegate.swift */,
-				459C19142C8E026F00BF68C2 /* CutViewController.swift */,
 				2AE1FE552C4A398B00F7748F /* SceneDelegate.swift */,
 				2AECFD9E2C4AB51100B62E36 /* ObjectDetectionController.swift */,
 				2AECFDA02C4BAC4600B62E36 /* YOLOv3.mlmodel */,
@@ -145,6 +181,7 @@
 				2AE1FE5C2C4A398E00F7748F /* Assets.xcassets */,
 				2AE1FE5E2C4A398E00F7748F /* LaunchScreen.storyboard */,
 				2AE1FE612C4A398E00F7748F /* Info.plist */,
+				2ACD13B02C8878B6003B38CD /* EditViewController.swift */,
 			);
 			path = "O-O Lens";
 			sourceTree = "<group>";
@@ -170,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				4573FE2F2C8888CA002F4DF9 /* CutView */,
+				45F8927B2C92837A00395A0C /* PracticeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,8 +215,8 @@
 		4573FE2F2C8888CA002F4DF9 /* CutView */ = {
 			isa = PBXGroup;
 			children = (
-				2ADCD9652C59F74C0036443E /* Card.swift */,
-				2ADCD9632C59F73F0036443E /* SelectVideoView.swift */,
+				2ACD13BE2C91EDE7003B38CD /* Card.swift */,
+				2ACD13BD2C91EDE7003B38CD /* SelectVideoView.swift */,
 				459C19122C8E022D00BF68C2 /* CutView.swift */,
 			);
 			path = CutView;
@@ -288,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACD13B72C9186BC003B38CD /* movie1.mov in Resources */,
 				2AE1FE602C4A398E00F7748F /* LaunchScreen.storyboard in Resources */,
 				2AE1FE5D2C4A398E00F7748F /* Assets.xcassets in Resources */,
 				2AE1FE5B2C4A398B00F7748F /* Main.storyboard in Resources */,
@@ -315,20 +354,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ACD13B12C8878B6003B38CD /* EditViewController.swift in Sources */,
 				2AEB4AF02C52A13C001A44D7 /* motionEvaluator.swift in Sources */,
+				2ACD13BF2C91EDE7003B38CD /* SelectVideoView.swift in Sources */,
 				2AECFDA12C4BAC4600B62E36 /* YOLOv3.mlmodel in Sources */,
 				2ACD139E2C84B886003B38CD /* customToolBarController.swift in Sources */,
+				2ACD13A92C87FC5A003B38CD /* TrimView.swift in Sources */,
+				45F8927C2C92837A00395A0C /* PracticeView.swift in Sources */,
+				2ACD13AE2C87FC5A003B38CD /* TimelineScroller.swift in Sources */,
+				2ACD13AD2C87FC5A003B38CD /* CenterLine.swift in Sources */,
 				2AE1FE542C4A398B00F7748F /* AppDelegate.swift in Sources */,
 				2AA325732C8309C000B6CDBC /* MediaCaptureSession.swift in Sources */,
+				2ACD13AB2C87FC5A003B38CD /* TimelineMeasure.swift in Sources */,
 				2AECFD9F2C4AB51100B62E36 /* ObjectDetectionController.swift in Sources */,
 				2ADCD9692C59F75B0036443E /* cardsData.swift in Sources */,
-				459C19132C8E022D00BF68C2 /* CutView.swift in Sources */,
-				2ADCD9642C59F73F0036443E /* SelectVideoView.swift in Sources */,
+				2ACD13AA2C87FC5A003B38CD /* FrameImagesView.swift in Sources */,
+				2ACD13AF2C87FC5A003B38CD /* VideoTimelineView.swift in Sources */,
 				2ACD13A02C84B9EA003B38CD /* PracticeViewController.swift in Sources */,
 				2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */,
-				2ADCD9662C59F74C0036443E /* Card.swift in Sources */,
+				2ACD13C02C91EDE7003B38CD /* Card.swift in Sources */,
 				2AE1FE562C4A398B00F7748F /* SceneDelegate.swift in Sources */,
+				2ACD13AC2C87FC5A003B38CD /* TimelineView.swift in Sources */,
 				459C19152C8E026F00BF68C2 /* CutViewController.swift in Sources */,
+				459C19132C8E022D00BF68C2 /* CutView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

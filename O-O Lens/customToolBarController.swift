@@ -3,8 +3,9 @@ import SwiftUI
 
 class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
 
+
     var decorationView: UIImageView?
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,25 +46,29 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
             selectedImage: UIImage(named: "film_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
         
+        // 修改：将 CutViewController 嵌入到 UINavigationController 中
         let cutView = CutViewController()
-        cutView.tabBarItem = UITabBarItem(
+        let cutNavigationController = UINavigationController(rootViewController: cutView)
+        cutNavigationController.tabBarItem = UITabBarItem(
             title: "Cut",
             image: UIImage(named: "cut_icon_unselected")?.withRenderingMode(.alwaysOriginal),
             selectedImage: UIImage(named: "cut_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
-        
-        let practiseView = storyboard.instantiateViewController(withIdentifier: "PVC") as! PracticeViewController
+
+        let practiseView = PracticeViewController()
         practiseView.tabBarItem = UITabBarItem(
             title: "Practise",
             image: UIImage(named: "practise_icon_unselected")?.withRenderingMode(.alwaysOriginal),
             selectedImage: UIImage(named: "practise_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
         
-        viewControllers = [filmView, cutView, practiseView]
+        viewControllers = [filmView, cutNavigationController, practiseView]
+        
         
         // 监听隐藏和显示 tabBar 的通知
         NotificationCenter.default.addObserver(self, selector: #selector(hideTabBar), name: .hideTabBarNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(showTabBar), name: .showTabBarNotification, object: nil)
+
     }
 
     override func viewDidLayoutSubviews() {
@@ -71,6 +76,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         // 设置 TabBar 的高度和位置
         var tabFrame = tabBar.frame
         tabFrame.size.height = 100  // 增加 TabBar 高度
+
         tabFrame.origin.y = view.frame.size.height - 98  // 保持在屏幕底部
         tabBar.frame = tabFrame
         
@@ -129,3 +135,4 @@ extension Notification.Name {
 // NotificationCenter.default.post(name: .hideTabBarNotification, object: nil)
 // 显示 TabBar
 // NotificationCenter.default.post(name: .showTabBarNotification, object: nil)
+

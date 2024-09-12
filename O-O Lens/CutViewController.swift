@@ -17,21 +17,27 @@ class CutViewController: UIViewController {
         hostingController.didMove(toParent: self)
         
 
-        // 监听跳转到页面 C 的通知
-        // NotificationCenter.default.addObserver(self, selector: #selector(openPageC), name: .openPageC, object: nil)
-        // 跳转到横版剪辑页
+        NotificationCenter.default.addObserver(self, selector: #selector(openEditPage), name: .openEditPage, object: nil)
     }
     
-    // 跳转到 UIKit 的页面 C
-//    @objc func openPageC() {
-//        let pageCViewController = PageCViewController()
-//        navigationController?.pushViewController(pageCViewController, animated: true)
-         // 跳转到横版剪辑页
-//    }
+
+    @objc func openEditPage() {
+        if let navController = navigationController {
+                print("Navigation Controller exists: \(navController)")
+            } else {
+                print("Navigation Controller is nil")
+            }
+        
+
+        let editViewController = EditViewController()
+        editViewController.view.backgroundColor = .white
+        navigationController?.pushViewController(editViewController, animated: true)
+        
+    }
 }
 
 // 定义通知名称
 extension Notification.Name {
-    static let openPageC = Notification.Name("openPageC") // 改成跳转到横版剪辑页的名称
+    static let openEditPage = Notification.Name("openEditPage")
 }
 

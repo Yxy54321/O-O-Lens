@@ -22,13 +22,8 @@ struct SelectVideoView: View {
                 Spacer()
                 
                 // 跳转到 UIKit 页面 C
-                Button(action: {
-                    // 跳转到剪辑页
-                    //  NotificationCenter.default.post(name: .openPageC, object: nil)
-                    //   
-                    for index in cardsData.cardItems.indices {
-                        cardsData.cardItems[index].isSelected = false
-                    }
+                Button(action:{
+                    NotificationCenter.default.post(name: .openEditPage, object: nil)
                 }) {
                     Text("确认")
                         .padding(.vertical, 10)
@@ -79,9 +74,8 @@ struct SelectVideoView: View {
                 NotificationCenter.default.post(name: .hideTabBarNotification, object: nil)
             }
     }
-    
 }
 
-#Preview {
-    SelectVideoView()
-}
+//#Preview {
+//    SelectVideoView()
+//}

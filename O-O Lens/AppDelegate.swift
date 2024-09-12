@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  usingsb
-//
-//  Created by lankai on 2024/7/19.
-//
-
 import UIKit
 
 @main

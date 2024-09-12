@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  usingsb
-//
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
