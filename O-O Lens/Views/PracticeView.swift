@@ -6,7 +6,7 @@ struct PracticeView: View {
     ZStack {
         Color.black // 全屏黑色背景
             .edgesIgnoringSafeArea(.all)
-        VStack(spacing: 30.0) {
+        VStack(spacing: 20.0) {
             HStack(){
                 HStack(spacing: 20.0){
                     Text("练习")
@@ -19,17 +19,26 @@ struct PracticeView: View {
                         .foregroundColor(Color.gray)
                 }
                 Spacer()
-                HStack(){
-                    Text("头像").foregroundColor(Color.white)
+                HStack(spacing: 11.0){
+                    Image("avatar-notice")
+                    Image("avatar-man")
                 }
             }
            
-            NavigationLink(destination: SelectVideoView()) {
+            Button(action: {
+                // 跳转
+                NotificationCenter.default.post(name: .openKadianPage, object: nil)
+            }) {
                 Image("quick-start-ptc")
                     .resizable()
-                    .aspectRatio(356/120, contentMode: .fit)
-                // 改成button跳转哈
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: UIScreen.main.bounds.width - 32) // 设置合理的宽度
+                    .cornerRadius(10)
             }
+            .accessibilityElement(children: .combine)
+            .accessibilityLabel("快速开始")
+
+
             
             VStack(alignment: .leading, spacing: 15.0){
                 HStack(){
@@ -37,17 +46,17 @@ struct PracticeView: View {
                         .font(.title2)
                         .fontWeight(.medium)
                     Spacer()
-
+                    Image(systemName: "arrow.right")
+                        .foregroundColor(.white)
                 }
-                HStack(){
-                    VStack(){
-                        Rectangle()
-                            .foregroundColor(Color(red: 217/255, green: 217/255, blue: 217/255))
-                            .frame(width:110,height:110)
-                            .cornerRadius(12)
-                        Text("剪辑教学")
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 10.0){
+                        FunCard(img:"funFilm-1",text:"宠物音乐卡点运镜")
+                        FunCard(img:"funFilm-2",text:"表情管理大师")
+                        FunCard(img:"funFilm-3",text:"萌宠摇镜头")
                     }
                 }
+                
             }.foregroundColor(Color.white)
             
             VStack(alignment: .leading, spacing: 15.0){
@@ -87,15 +96,36 @@ private struct BasicCard:View {
     var text: String
     var body: some View {
         Button(action: {
-            //
+            NotificationCenter.default.post(name: .openKadianPage, object: nil)
         }){
             VStack(alignment: .leading){
                 Image(img)
                 Text(text)
+                    .foregroundColor(Color(red: 217/255, green: 217/255, blue: 217/255))
+                    .font(.system(size: 13))
             }
         }
     }
 }
+
+private struct FunCard:View {
+    var img: String
+    var text: String
+    var body: some View {
+        Button(action: {
+            //
+        }){
+            VStack(alignment: .leading){
+                Image(img)
+                    .aspectRatio(157/88, contentMode: .fill)
+                Text(text)
+                    .foregroundColor(Color(red: 217/255, green: 217/255, blue: 217/255))
+                    .font(.system(size: 13))
+            }
+        }
+    }
+}
+
 
 #Preview {
     PracticeView()

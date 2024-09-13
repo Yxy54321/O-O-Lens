@@ -6,11 +6,9 @@
 //
 
 import XCTest
-<<<<<<< HEAD
-@testable import usingsb
-=======
+
 //@testable import usingsb
->>>>>>> b968401466658fcb34df72ec2de45f8a3499b072
+
 
 final class usingsbTests: XCTestCase {
 

@@ -41,7 +41,7 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         let filmView = storyboard.instantiateViewController(withIdentifier: "ODV") as! VisionObjectRecognitionViewController
 
         filmView.tabBarItem = UITabBarItem(
-            title: "Film",
+            title: "摄像机",
             image: UIImage(named: "film_icon_unselected")?.withRenderingMode(.alwaysOriginal),
             selectedImage: UIImage(named: "film_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
@@ -50,19 +50,20 @@ class CustomTabBarController: UITabBarController, UITabBarControllerDelegate {
         let cutView = CutViewController()
         let cutNavigationController = UINavigationController(rootViewController: cutView)
         cutNavigationController.tabBarItem = UITabBarItem(
-            title: "Cut",
+            title: "剪辑",
             image: UIImage(named: "cut_icon_unselected")?.withRenderingMode(.alwaysOriginal),
             selectedImage: UIImage(named: "cut_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
 
-        let practiseView = PracticeViewController()
-        practiseView.tabBarItem = UITabBarItem(
-            title: "Practise",
+        let practiceView = PracticeViewController()
+        let practiseNavigationController = UINavigationController(rootViewController: practiceView)
+        practiseNavigationController.tabBarItem = UITabBarItem(
+            title: "练习",
             image: UIImage(named: "practise_icon_unselected")?.withRenderingMode(.alwaysOriginal),
             selectedImage: UIImage(named: "practise_icon_selected")?.withRenderingMode(.alwaysOriginal)
         )
         
-        viewControllers = [filmView, cutNavigationController, practiseView]
+        viewControllers = [filmView, cutNavigationController,practiseNavigationController]
         
         
         // 监听隐藏和显示 tabBar 的通知

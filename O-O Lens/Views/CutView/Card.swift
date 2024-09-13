@@ -16,8 +16,8 @@ struct Card: View {
                 Text("|")
                 Text(item.duration)
                 Spacer()
-                Image(systemName: "ellipsis")
-                    .foregroundColor(.white)
+//                Image(systemName: "ellipsis")
+//                    .foregroundColor(.white)
             }
             .font(.caption)
             .foregroundColor(.white)
