@@ -36,6 +36,7 @@
 		2AEE37AE2C54DA0100451627 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE37AD2C54DA0100451627 /* SpeechManager.swift */; };
 		459C19132C8E022D00BF68C2 /* CutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19122C8E022D00BF68C2 /* CutView.swift */; };
 		459C19152C8E026F00BF68C2 /* CutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459C19142C8E026F00BF68C2 /* CutViewController.swift */; };
+		45C490F22C952B470076C50C /* media.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 45C490F12C952B420076C50C /* media.mp4 */; };
 		45F8927C2C92837A00395A0C /* PracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F8927B2C92837A00395A0C /* PracticeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		2AEE37AD2C54DA0100451627 /* SpeechManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
 		459C19122C8E022D00BF68C2 /* CutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutView.swift; sourceTree = "<group>"; };
 		459C19142C8E026F00BF68C2 /* CutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CutViewController.swift; sourceTree = "<group>"; };
+		45C490F12C952B420076C50C /* media.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = media.mp4; sourceTree = "<group>"; };
 		45F8927B2C92837A00395A0C /* PracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 		2ACD13A12C87FC5A003B38CD /* VideoTimelineView */ = {
 			isa = PBXGroup;
 			children = (
+				45C490F12C952B420076C50C /* media.mp4 */,
 				2ACD13B22C887FF9003B38CD /* movie1.mov */,
 				2ACD13A22C87FC5A003B38CD /* TrimView.swift */,
 				2ACD13A32C87FC5A003B38CD /* FrameImagesView.swift */,
@@ -326,6 +329,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45C490F22C952B470076C50C /* media.mp4 in Resources */,
 				2ACD13B72C9186BC003B38CD /* movie1.mov in Resources */,
 				2AE1FE602C4A398E00F7748F /* LaunchScreen.storyboard in Resources */,
 				2AE1FE5D2C4A398E00F7748F /* Assets.xcassets in Resources */,

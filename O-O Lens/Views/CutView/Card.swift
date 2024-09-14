@@ -70,7 +70,6 @@ struct TextOverlay: View {
                 }
                 .padding(10)
             }.frame(height: 68)
-            
         }
         .foregroundStyle(.white)
     }

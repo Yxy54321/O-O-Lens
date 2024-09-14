@@ -34,9 +34,6 @@ class PracticeViewController: UIViewController{
         
 // todo: 改成跳转卡点页
         print("卡点页")
-//        let editViewController = EditViewController()
-//        editViewController.view.backgroundColor = .white
-//        navigationController?.pushViewController(editViewController, animated: true)
         
     }
 
